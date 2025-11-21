@@ -1,33 +1,37 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
     margin: 0;
     padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to bottom right, #ffdde1, #ee9ca7);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     text-align: center;
 }
 
-header {
-    background-color: #4CAF50;
-    color: white;
-    padding: 50px 20px;
+.container {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
 }
 
-section {
-    padding: 30px 20px;
+h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    animation: heartbeat 1s infinite;
 }
 
-section h2 {
-    color: #333;
+p {
+    font-size: 20px;
+    line-height: 1.6;
+    margin: 10px 0;
 }
 
-a {
-    color: #4CAF50;
-    text-decoration: none;
-}
-
-footer {
-    background-color: #333;
-    color: white;
-    padding: 20px;
-    margin-top: 20px;
+/* تأثير قلب ينبض */
+@keyframes heartbeat {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
 }
